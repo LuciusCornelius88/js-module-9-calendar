@@ -1,0 +1,100 @@
+/* ================ RESET DEFAULT ================ */
+
+:root {
+  --rotation-deg: calc(360 * 23 / 60);
+}
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+/* ================ / RESET DEFAULT ================ */
+/* ================ MECHANICAL CLOCK ================ */
+
+.mechanical-clock {
+  width: 500px;
+  height: 500px;
+  background-image: url('../assets/clock.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: relative;
+  left: 600px;
+}
+
+.clock-arrow {
+  position: absolute;
+  background-color: black;
+  transform-origin: bottom left;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.clock-center {
+  position: absolute;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.clock-hours__arrow {
+  bottom: 50%;
+  left: 50%;
+  width: 10px;
+  height: 25%;
+}
+
+.clock-minutes__arrow {
+  bottom: 50%;
+  left: 50%;
+  width: 7px;
+  height: 33%;
+}
+
+.clock-seconds__arrow {
+  bottom: 50%;
+  left: 50%;
+  width: 5px;
+  height: 40%;
+}
